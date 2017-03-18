@@ -1,0 +1,77 @@
+---
+layout: default
+---
+<div class="container">
+	<div class="hero">
+		<div class="row">
+			<div class="col-md-5 header"><h1>{{ site.name }}</h1></div>
+			<div class="col-md-7 header">
+				<ul> {% for item in site.data.navigation %}
+					<li>
+	    				<a href="{{ item.url }}">{{ item.title }}</a>
+					</li>
+				{% endfor %}
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 starter"><h1>Hier entsteht Freiraum für freie Bildung</h1>
+				<p>Edulabs sind interdisziplinäre Labore von Lehrer*innen, Designer*innen sowie Techniker*innen, in denen sie voneinander lernen und gemeinsam digitale und frei zugängliche Bildungsformate entwickeln.</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12 form-actions"><div class="btn"><a href="#mitmachen"><h1>Mitmachen</h1></a></div></div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="logol"><a href="https://www.bmbf.de/"><img class="logol" src="/img/BMBF_Logo.png" border="0" alt="Logo BMBF"></img></a></div>
+				<div class="logor"><a href="https://okfn.de/"><img class="logor" src="/img/logo-okfn.png" border="0" alt="Logo okfn DE"></img></a></div>
+			</div>
+		</div>
+		<div class="raw">
+			<div class="cold-md-12">
+				<a href="#projekt"><img class="arrow-down" src="/img/arrow-down.png"></img></a>
+			</div>
+		</div>
+	</div>
+	<div class="raw">
+		<div class="col-md-12 blog">
+			<h1 id="projekt">Über das Projekt</h1>
+			<hr>
+			<p>Wie lassen sich offene Bildungsangebote mit digital gestützten Methoden gestalten? Edulabs sind lokale Gruppen aus Menschen, die ihre didaktischen, technischen und gestalterischen F&auml;higkeiten einsetzen, um zusammen innovative und nachnutzbare Bildungsmaterialien zu entwickeln.</br>
+Die Labs verstehen sich als regionale Inkubatoren für Bildungsformate, in die digitale Methoden auf neuartige Weise eingebunden werden. In drei Bundesl&auml;ndern (Berlin-Brandenburg, Baden-W&uuml;rttemberg, NRW) organisiert das Projekt regelm&auml;ßige Treffen von interdisziplinären Teams, in denen Materialien und digital gest&uuml;tzte Methoden erstellt, dokumentiert und verbessert werden. Die Lab-Projekte werden didaktisch und technisch begleitet, sowie bei der Vernetzung mit Bildungstr&auml;gern unterst&uuml;tzt.</p>
+</br>
+			<div id="mitmachen" class="blog"><h1>Mitmachen:</h1>
+			<p>Hier steht Text, der zum Mitmachen einladen soll. Insbesondere die Mailingliste usw.</p>
+			</div>
+	</div>
+	<div class="raw">
+		<div class="col-md-12 blog">
+			<h1 id="blog">Aktuelle Blogeinträge</h1>
+			<hr>
+			<ul>
+				{% for post in site.posts %}
+	       			<li>
+		    			<span style="font-weight: bolder;">--> </span><span class="date">{{ post.date | date: '%Y %b %d' }}</span> - <a style="font-weight: bolder;" href="{{ post.url }}">{{ post.title }}</a>
+		    			{{post.excerpt}}
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	<div class="raw">
+		<div class="col-md-12 blog">    
+			<h1 id="kontakt">Kontakt</h1>
+			<hr>
+    			<ul>
+        			<li>
+				    <a href="http://twitter.com">Mail</a>
+				</li>
+				<li>
+				    <a href="http://twitter.com">Facebook</a>
+				</li>
+				<li>
+				    <a href="http://twitter.com">Twitter</a>
+				</li>
+			</ul>
+		</div>
+</div>
