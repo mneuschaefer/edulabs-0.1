@@ -259,19 +259,18 @@ blockquote {
 .logol {
 	background-color: transparent;
 	float: left;
-	width:50%;
-	height:auto;
-	min-width: 80px;
-    margin-left: 0rem;
-    margin-top: 0.3rem;
+	width: 48%;
+	height: auto;
+    	margin-left: 0rem;
+    	margin-top: 0.4rem;
 	a:hover {background-color: transparent;}
 	
 }
 .logor {
 	background-color: transparent;
 	float: right;
-	width:50% !important;
-	height:auto !important;
+	width: 52%; 
+	height: auto;
 	a:hover {background-color: transparent;}
 }
 .btn { 
@@ -293,14 +292,14 @@ blockquote {
 .form-actions {
 	text-align: center;
     	background-color: transparent;
-	padding-bottom: 40px;
+	padding-bottom: 60px;
    
 
 }
 .starter {
 	padding-bottom: 40px;
 	text-align: justify;
-	padding-top: 40px;
+	padding-top: 30px;
 	h1 {
 		font-size: 1.4em;
 		margin-bottom: 5px;
