@@ -1,19 +1,19 @@
 // =============================================================
 // =============================================================
 //
-// Hero component - for landing page top
+// Arow component - for landing page top
 //
 // =============================================================
 // =============================================================
 
-.hero {
-  min-height: 100vh;
+.arrow {
+  min-height: 87vh;
   position: relative;
-@media screen and (max-height: 380px) {min-height: 23vh;}
+  @media screen and (max-height: 380px) {min-height: 21vh;}
   // Position the arrow
   .arrow-down {
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 50%;
     margin-left: -3.0rem;
   }
